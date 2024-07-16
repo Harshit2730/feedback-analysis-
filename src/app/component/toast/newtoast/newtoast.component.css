@@ -1,0 +1,13 @@
+.success-alert{
+    border-left: 5px solid rgba(var(--base-color));
+}
+
+.danger-alert{
+    border-left: 5px solid red;
+}
+
+.toast{
+    min-width: 300px;
+    background-color: #ffffff;
+    padding:20px;
+}

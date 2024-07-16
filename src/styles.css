@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'fontone';
+    src: url('src/assets/static/fonts/TiltNeon-Regular.ttf');
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Fontone;
+    font-size: small;
+}
+
+
+:root{
+    --base-color: 126, 127, 154;
+    --background: #f0f8ff;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+    height:5px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ffffff;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(var(--base-color),0.8);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(var(--base-color),1);
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.headline{
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+.sub-headline{
+    font-size: large;
+    font-weight: lighter;
+}
+
+.card{
+    background-color: #ffffff;
+    padding:20px;
+    box-shadow: 0 0 20px #a1a0a0;
+    border-radius: 5px;;    
+}
+
+svg{
+    fill: rgba(var(--base-color),1);
+}

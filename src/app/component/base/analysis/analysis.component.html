@@ -1,0 +1,31 @@
+<div class="comp-container">
+    <div class="card-holder">
+        <div class="card details">
+            <div class="headline">Analysis</div>
+            <table class="stats" >
+                <tr>
+                    <td>Average Rating</td>
+                    <td>{{stats.overall_sentiment  || 0}}</td>
+                </tr>
+                <tr>
+                    <td>Positive Rating</td>
+                    <td>{{stats.positive_rating  || 0}}/{{stats.total_count  || 0}}</td>
+                </tr>
+                <tr>
+                    <td>Neutral Rating</td>
+                    <td>{{stats.neutral_rating || 0}}/{{stats.total_count  || 0}}</td>
+                </tr>
+                <tr>
+                    <td>Negative Rating</td>
+                    <td>{{stats.negative_rating  || 0}}/{{stats.total_count  || 0}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="card trend">
+            <canvas #trend id="trend"></canvas>
+        </div>
+        <div class="card wordcloud">
+            <canvas #wordcloud id="wordcloud"></canvas>
+        </div>
+    </div>
+</div>

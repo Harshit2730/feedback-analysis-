@@ -1,0 +1,27 @@
+<div class="comp-container">
+    <div class="dataset card">
+        <h2 class="headline">
+            Recorded Feedbacks
+        </h2>
+        <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+            <thead>
+                <tr>
+                    <th style="width:5%">Id</th>
+                    <th style="width:15%">Rating</th>
+                    <th style="width:60%">Feedback</th>
+                    <th style="width:10%">Polarity</th>
+                    <th style="width:10%">Subjectivity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="dataelement" *ngFor="let feedback of feedbacks">
+                    <td>{{feedback.id}}</td>
+                    <td>{{feedback.rating}}</td>
+                    <td>{{feedback.feedback}}</td>
+                    <td>{{feedback.polarity}}</td>
+                    <td>{{feedback.subjectivity}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

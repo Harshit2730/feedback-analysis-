@@ -1,0 +1,21 @@
+.comp-container{
+    height:calc(100% - 60px);
+    width:calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding:30px 20px;
+    overflow: hidden;
+}
+.dataset{
+    overflow: auto;
+    width:calc(80% - 20px);
+    max-height:90%;
+}
+.dataelement{
+    transition: background-color 0.3s ease-in-out   ;
+}
+.dataelement:hover{
+    background-color: #e6e6e6;
+    
+} 

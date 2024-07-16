@@ -1,0 +1,52 @@
+.comp-container{
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-holder{
+    width:90%;
+    height:90%;
+    display: grid;
+    gap:20px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 40vh 1fr;
+}
+
+.details{
+    grid-column: 1/2;
+    grid-row:1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.stats{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.stats tr{
+    margin:10px;    
+}
+td{
+    padding: 0 15px;
+}
+
+.trend{
+    grid-column: 2/3;
+    grid-row:1/2;
+}
+
+.wordcloud{
+    grid-column: 1/3;
+    grid-row:2/3;
+
+}
+
+
+

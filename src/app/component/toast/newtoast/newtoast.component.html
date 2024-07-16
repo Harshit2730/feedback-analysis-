@@ -1,0 +1,8 @@
+<div class="toast card" 
+    [ngClass]="{
+    'success-alert': messageType === 'success',
+    'danger-alert': messageType === 'error'
+    }"
+    *ngIf="showToast">
+    {{toastMessage}}
+</div>
